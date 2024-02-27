@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .line{
+            width: 10px;
+            height: 10px;
+            border-radius: 80px;
+            background-color: red;
+            margin-left: 20px;
+            animation: test 1000ms infinite;
+            animation-direction: alternate;
+            
+        }
+
+        @keyframes test {
+           
+            from {
+                width: 20px;
+                height: 8px;
+                border-radius: 80px;
+                background-color: red;
+                transform: translatex(20px);
+            }
+            to{
+                width: 20px;
+                height: 7px;
+                border-radius: 80px;
+                background-color: blue;
+                transform: translatey(40px);
+            }
+
+            
+        }
+        body{
+            background-color: rgb(186, 186, 14);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .container{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="line" style="animation-delay: 100ms;"></div>
+        <div class="line" style="animation-delay: 200ms;"></div>
+        <div class="line" style="animation-delay: 300ms;"></div>
+        <div class="line" style="animation-delay: 300ms;"></div>
+        <div class="line" style="animation-delay: 400ms;"></div>
+        <div class="line" style="animation-delay: 500ms;"></div>
+        <div class="line" style="animation-delay: 600ms;"></div>
+        <div class="line" style="animation-delay: 700ms;"></div>
+    </div>
+</body>
+</html>
