@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 300px;
+            height: 100px;
+            border-radius: 80px;
+            background-color: cadetblue;
+            animation-name: hemanth;
+            animation-duration: 4s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes hemanth {
+            from {
+                width: 820px;
+                background-color: red;
+                transform: translatex(400px);
+            }
+            to{
+                width: 300px;
+                background-color: blue;
+                transform: translatey(400px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
